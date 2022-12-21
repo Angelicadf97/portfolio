@@ -1,7 +1,14 @@
 .App {
-  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
 }
 
+#dark {
+  background-color: #1c1a1d;
+  color: white;
+}
+
+/*SCROLL-SNAP*/
 html {
   scroll-snap-type: y mandatory;
 }
@@ -14,18 +21,26 @@ nav {
   scroll-snap-align: start;
 }
 
-section {
-  min-height: 100vh;
-  scroll-snap-align: start;
+/*SCROLL-SNAP*/
+
+/*NAVBAR*/
+nav span {
+  font-family: 'Reenie Beanie', cursive;
 }
 
-#dark {
-  background-color: #1c1a1d;
-  color: white;
+nav a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  color: black;
 }
 
 #dark nav {
   background-color: #1c1a1d;
+  color: white;
+}
+
+#dark nav a{
   color: white;
 }
 
@@ -39,3 +54,26 @@ section {
 .switch label {
   margin: 10px;
 }
+/*NAVBAR*/
+
+/*SCROLL-SNAP*/
+/*SCROLL-SNAP*/
+/*SCROLL-SNAP*/
+/*SCROLL-SNAP*/
+/*SCROLL-SNAP*/
+
+
+section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  padding: 5rem;
+}
+
+section h1 {
+  margin-top: 2rem;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+
+
