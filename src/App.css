@@ -30,10 +30,69 @@ nav span {
 
 nav a{
   text-decoration: none;
-  font-size: 1.5rem;
   margin-right: 2rem;
   color: black;
 }
+nav li{
+  text-align: center;
+}
+
+/*MENU*/
+.menu{
+  width: 30px;
+  height: 30px;
+}
+
+.hamburguer{
+  position: relative;
+  display: block;
+  background-color: black;
+  width: 30px;
+  height: 2px;
+  top: 15px;
+  transition: 1s ease-in-out;
+}
+.hamburguer::before,
+.hamburguer::after{
+  background-color: black;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 1s ease-in-out;
+}
+.hamburguer::before{
+  top: -10px;
+}
+.hamburguer::after{
+  bottom: -10px;
+}
+nav button input{
+  display: none;
+}
+nav button input:checked ~ label .hamburguer{
+  transform: rotate(45deg);
+}
+nav button input:checked ~ label .hamburguer::before{
+  transform: rotate(90deg);
+  top:0
+}
+nav button input:checked ~ label .hamburguer::after{
+  transform: rotate(90deg);
+  bottom:0;
+}
+
+#dark .hamburguer{
+  background-color: white;
+}
+#dark .hamburguer::before{
+  background-color: white;
+}
+#dark .hamburguer::after{
+  background-color: white;
+}
+/*MENU*/
 
 #dark nav {
   background-color: #1c1a1d;
