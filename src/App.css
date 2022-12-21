@@ -56,8 +56,8 @@ nav a{
 }
 /*NAVBAR*/
 
-/*SCROLL-SNAP*/
-/*SCROLL-SNAP*/
+/*SOBRE MIM*/
+/*SOBRE MIM*/
 /*SCROLL-SNAP*/
 /*SCROLL-SNAP*/
 /*SCROLL-SNAP*/
@@ -71,8 +71,20 @@ section {
 
 section h1 {
   margin-top: 2rem;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 700;
+}
+
+@media screen and (max-width: 992px){
+  section{
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section{
+    padding: 1rem;
+  }
 }
 
 
