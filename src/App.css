@@ -129,34 +129,57 @@ nav button input:checked ~ label .hamburguer::after{
 }
 /*NAVBAR*/
 
-/*SOBRE MIM*/
-/*SOBRE MIM*/
-/*SCROLL-SNAP*/
-/*SCROLL-SNAP*/
-/*SCROLL-SNAP*/
-
-
 section {
   min-height: 100vh;
   scroll-snap-align: start;
   padding: 5rem;
 }
 
-section h1 {
+h1 {
   margin-top: 2rem;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
 }
+/*SOBRE MIM*/
+p{
+  font-size: 1.2rem;
+}
+/*SOBRE MIM*/
+/*SCROLL-SNAP*/
+/*SCROLL-SNAP*/
+/*SCROLL-SNAP*/
+
+
+
 
 @media screen and (max-width: 992px){
   section{
     padding: 3rem;
   }
+  h1 {
+    margin-top: 1.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  p{
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .App{
+    text-align: center;
+  }
   section{
     padding: 1rem;
+  }
+  h1 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  p{
+    font-size: 0.8rem;
   }
 }
 
