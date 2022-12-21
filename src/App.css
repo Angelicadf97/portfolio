@@ -3,9 +3,16 @@
   text-decoration: none;
 }
 
-#dark {
+#dark section{
   background-color: #1c1a1d;
   color: white;
+  transition: 0.5s ease-in-out;
+}
+
+#light section{
+  background-color: white;
+  color: #1c1a1d;
+  transition: 0.5s ease-in-out;
 }
 
 /*SCROLL-SNAP*/
@@ -94,9 +101,16 @@ nav button input:checked ~ label .hamburguer::after{
 }
 /*MENU*/
 
+#light nav{
+  background-color: white;
+  color: #1c1a1d;
+  transition: 0.5s ease-in-out;
+}
+
 #dark nav {
   background-color: #1c1a1d;
   color: white;
+  transition: 0.5s ease-in-out;
 }
 
 #dark nav a{
