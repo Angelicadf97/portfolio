@@ -19,7 +19,7 @@ function App() {
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="App" id={theme}>
         <Navbar darkmode={
-          <div class="form-switch switch">
+          <div class="switch">
             <input type="checkbox" id="toggle_checkbox"  onChange={toggleTheme} checked={theme === "dark"} />
             <label for="toggle_checkbox">
               <div id="star">
@@ -28,8 +28,6 @@ function App() {
               </div>
               <div id="moon"></div>
             </label>
-            {/* <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onChange={toggleTheme} checked={theme === "dark"} />
-            <label class="form-check-label" for="flexSwitchCheckDefault"></label> */}
           </div>
         } />
 

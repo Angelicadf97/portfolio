@@ -43,6 +43,7 @@ nav a{
 }
 nav li{
   text-align: center;
+  height: 2rem;
 }
 
 /*MENU*/
@@ -103,6 +104,11 @@ nav button input:checked ~ label .hamburguer::after{
 /*MENU*/
 
 /*SWITCH*/
+.switch{
+  margin-top: 0.3rem;
+  margin-left: -1.5rem;
+}
+
 #toggle_checkbox {
   display: none;
 }
@@ -196,6 +202,10 @@ nav button input:checked ~ label .hamburguer::after{
 #toggle_checkbox:checked+label #moon:before {
   background-color: #1c1a1d;
 }
+
+.switch label {
+  margin: 10px;
+}
 /*SWITCH*/
 
 #light nav{
@@ -212,17 +222,6 @@ nav button input:checked ~ label .hamburguer::after{
 
 #dark nav a{
   color: white;
-}
-
-.switch {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.switch label {
-  margin: 10px;
 }
 /*NAVBAR*/
 
