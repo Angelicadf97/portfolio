@@ -35,7 +35,17 @@ const Navbar = (props) => {
                     </ul>
                 </div>
             </div>
-            <a class="btn btn-primary position-fixed bottom-0 end-0 m-4" href="#topo" role="button">Subir</a>
+            <a class="position-fixed bottom-0 end-0 m-4" href="#topo" role="button">
+                <div id="hand">
+                    <div id="dedo1"></div>
+                    <div id="dedo2"></div>
+                    <div id="dedo3"></div>
+                    <div id="dedo4"></div>
+                    <div id="dedo5"></div>
+                    <div id="palma"></div>
+                    <div id="pulso"></div>
+                </div>
+                </a>
         </nav>
     )
 }

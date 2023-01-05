@@ -28,7 +28,6 @@ body {
 nav {
   scroll-snap-align: start;
 }
-
 /*SCROLL-SNAP*/
 
 /*NAVBAR*/
@@ -223,6 +222,65 @@ nav button input:checked ~ label .hamburguer::after{
 #dark nav a{
   color: white;
 }
+
+/*BUTTONUP*/
+#hand{
+  position: absolute;
+  top: -10px;
+}
+#light #hand div{
+  background-color: #1c1a1d;
+}
+#dark #hand div{
+  background-color: white;
+}
+#dedo1{
+  width: 0.4rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+  position: relative;
+  bottom: 13px;
+}
+#dedo2, #dedo3, #dedo4, #dedo5{
+  width: 0.4rem;
+  height: 1rem;
+  border-radius: 0.2rem;
+  position: relative;
+}
+#dedo2{
+  right: 0.4rem;
+  bottom: 35px;
+}
+#dedo3{
+  right: 0.8rem;
+  bottom: 49px;
+}
+#dedo4{
+  right: 1.2rem;
+  bottom: 63px;
+}
+#dedo5{
+  left: 0.3rem;
+  bottom: 78px;
+  transform: rotateZ(35deg);
+}
+#palma{
+  width: 1.7rem;
+  height: 1.2rem;
+  position: relative;
+  bottom: 92px;
+  right: 19px;
+  border-radius: 0.6rem;
+}
+#pulso{
+  width: 1.3rem;
+  height: 0.4rem;
+  position: relative;
+  bottom: 95px;
+  right: 16px;
+  border-radius: 0.15rem;
+}
+/*BUTTONUP*/
 /*NAVBAR*/
 
 section {
@@ -242,9 +300,9 @@ p{
 }
 /*SOBRE MIM*/
 /*SCROLL-SNAP*/
-/*SCROLL-SNAP*/
-/*SCROLL-SNAP*/
+/*CONTATO*/
 
+/*CONTATO*/
 
 
 
