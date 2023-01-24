@@ -5,7 +5,7 @@ const Navbar = (props) => {
                 <span style={{ fontSize: '3rem' }}>Angélica Flores</span>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <input type="checkbox" id="menu-hamburguer" />
-                    <label for="menu-hamburguer">
+                    <label htmlFor="menu-hamburguer">
                         <div className="menu">
                             <span className="hamburguer">
 
@@ -35,17 +35,9 @@ const Navbar = (props) => {
                     </ul>
                 </div>
             </div>
-            <a class="position-fixed bottom-0 end-0 m-4" href="#topo" role="button">
-                <div id="hand">
-                    <div id="dedo1"></div>
-                    <div id="dedo2"></div>
-                    <div id="dedo3"></div>
-                    <div id="dedo4"></div>
-                    <div id="dedo5"></div>
-                    <div id="palma"></div>
-                    <div id="pulso"></div>
-                </div>
-                </a>
+            <a className="position-fixed bottom-0 end-0 m-4" href="#topo" role="button">
+                <i className='fas fa-hand-point-up' style={{"fontSize": "36px"}}></i>
+            </a>
         </nav>
     )
 }

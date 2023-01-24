@@ -4,13 +4,13 @@
   text-decoration: none;
 }
 
-#dark section{
+#dark section {
   background-color: #1c1a1d;
   color: white;
   transition: 0.5s ease-in-out;
 }
 
-#light section{
+#light section {
   background-color: white;
   color: #1c1a1d;
   transition: 0.5s ease-in-out;
@@ -28,6 +28,7 @@ body {
 nav {
   scroll-snap-align: start;
 }
+
 /*SCROLL-SNAP*/
 
 /*NAVBAR*/
@@ -35,23 +36,24 @@ nav span {
   font-family: 'Reenie Beanie', cursive;
 }
 
-nav a{
+nav a {
   text-decoration: none;
   margin-right: 2rem;
   color: black;
 }
-nav li{
+
+nav li {
   text-align: center;
   height: 2rem;
 }
 
 /*MENU*/
-.menu{
+.menu {
   width: 30px;
   height: 30px;
 }
 
-.hamburguer{
+.hamburguer {
   position: relative;
   display: block;
   background-color: black;
@@ -60,8 +62,9 @@ nav li{
   top: 15px;
   transition: 1s ease-in-out;
 }
+
 .hamburguer::before,
-.hamburguer::after{
+.hamburguer::after {
   background-color: black;
   content: '';
   display: block;
@@ -70,40 +73,49 @@ nav li{
   position: absolute;
   transition: 1s ease-in-out;
 }
-.hamburguer::before{
+
+.hamburguer::before {
   top: -10px;
 }
-.hamburguer::after{
+
+.hamburguer::after {
   bottom: -10px;
 }
-nav button input{
+
+nav button input {
   display: none;
 }
-nav button input:checked ~ label .hamburguer{
+
+nav button input:checked~label .hamburguer {
   transform: rotate(45deg);
 }
-nav button input:checked ~ label .hamburguer::before{
+
+nav button input:checked~label .hamburguer::before {
   transform: rotate(90deg);
-  top:0
-}
-nav button input:checked ~ label .hamburguer::after{
-  transform: rotate(90deg);
-  bottom:0;
+  top: 0
 }
 
-#dark .hamburguer{
+nav button input:checked~label .hamburguer::after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+#dark .hamburguer {
   background-color: white;
 }
-#dark .hamburguer::before{
+
+#dark .hamburguer::before {
   background-color: white;
 }
-#dark .hamburguer::after{
+
+#dark .hamburguer::after {
   background-color: white;
 }
+
 /*MENU*/
 
 /*SWITCH*/
-.switch{
+.switch {
   margin-top: 0.3rem;
   margin-left: -1.5rem;
 }
@@ -205,9 +217,10 @@ nav button input:checked ~ label .hamburguer::after{
 .switch label {
   margin: 10px;
 }
+
 /*SWITCH*/
 
-#light nav{
+#light nav {
   background-color: white;
   color: #1c1a1d;
   transition: 0.5s ease-in-out;
@@ -219,67 +232,19 @@ nav button input:checked ~ label .hamburguer::after{
   transition: 0.5s ease-in-out;
 }
 
-#dark nav a{
+#dark nav a {
   color: white;
 }
 
 /*BUTTONUP*/
-#hand{
-  position: absolute;
-  top: -10px;
+#light .fa-hand-point-up {
+  color: #1c1a1d;
 }
-#light #hand div{
-  background-color: #1c1a1d;
+
+#dark .fa-hand-point-up {
+  color: white;
 }
-#dark #hand div{
-  background-color: white;
-}
-#dedo1{
-  width: 0.4rem;
-  height: 2rem;
-  border-radius: 0.2rem;
-  position: relative;
-  bottom: 13px;
-}
-#dedo2, #dedo3, #dedo4, #dedo5{
-  width: 0.4rem;
-  height: 1rem;
-  border-radius: 0.2rem;
-  position: relative;
-}
-#dedo2{
-  right: 0.4rem;
-  bottom: 35px;
-}
-#dedo3{
-  right: 0.8rem;
-  bottom: 49px;
-}
-#dedo4{
-  right: 1.2rem;
-  bottom: 63px;
-}
-#dedo5{
-  left: 0.3rem;
-  bottom: 78px;
-  transform: rotateZ(35deg);
-}
-#palma{
-  width: 1.7rem;
-  height: 1.2rem;
-  position: relative;
-  bottom: 92px;
-  right: 19px;
-  border-radius: 0.6rem;
-}
-#pulso{
-  width: 1.3rem;
-  height: 0.4rem;
-  position: relative;
-  bottom: 95px;
-  right: 16px;
-  border-radius: 0.15rem;
-}
+
 /*BUTTONUP*/
 /*NAVBAR*/
 
@@ -290,52 +255,88 @@ section {
 }
 
 h1 {
-  margin-top: 2rem;
+  margin: 2rem 0 4rem 0;
   font-size: 4rem;
   font-weight: 700;
 }
+
 /*SOBRE MIM*/
-p{
+p {
   font-size: 1.2rem;
 }
+
 /*SOBRE MIM*/
 /*SCROLL-SNAP*/
-/*CONTATO*/
 
 /*CONTATO*/
+#light #Contact {
+  border-radius: 1rem;
+  padding: 2rem;
+  /* box-shadow: #1c1a1d 0px 5px 15px; */
+  box-shadow:
+    rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#dark #Contact {
+  border-radius: 1rem;
+  padding: 2rem;
+  /* box-shadow: #1c1a1d 0px 5px 15px; */
+  box-shadow:
+    rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+/*CONTATO*/
 
 
 
-@media screen and (max-width: 992px){
-  section{
+@media screen and (max-width: 992px) {
+  section {
     padding: 3rem;
   }
+
   h1 {
     margin-top: 1.5rem;
     font-size: 3rem;
     font-weight: 700;
   }
-  p{
+
+  p {
     font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .App{
+  .App {
     text-align: center;
   }
-  section{
+
+  section {
     padding: 1rem;
   }
+
   h1 {
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
   }
-  p{
+
+  p {
     font-size: 0.8rem;
   }
 }
 
+/* SCROLL */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: #1c1a1d;
+  border-radius: 10px;
+}
 
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+/* SCROLL */

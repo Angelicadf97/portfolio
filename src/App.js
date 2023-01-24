@@ -19,12 +19,12 @@ function App() {
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="App" id={theme}>
         <Navbar darkmode={
-          <div class="switch">
+          <div className="switch">
             <input type="checkbox" id="toggle_checkbox"  onChange={toggleTheme} checked={theme === "dark"} />
-            <label for="toggle_checkbox">
+            <label htmlFor="toggle_checkbox">
               <div id="star">
-                <div class="star" id="star-1">★</div>
-                <div class="star" id="star-2">★</div>
+                <div className="star" id="star-1">★</div>
+                <div className="star" id="star-2">★</div>
               </div>
               <div id="moon"></div>
             </label>
