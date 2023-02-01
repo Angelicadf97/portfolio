@@ -264,7 +264,11 @@ h1 {
 p {
   font-size: 1.2rem;
 }
-
+#foto{
+  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+}
 /*SOBRE MIM*/
 /*SCROLL-SNAP*/
 
@@ -301,6 +305,10 @@ p {
 
   p {
     font-size: 1rem;
+  }
+  #foto{
+    width: 300px;
+    height: 300px;
   }
 }
 
