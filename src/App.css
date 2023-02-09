@@ -280,15 +280,22 @@ p {
   }
 
   50% {
-    border-radius: 60% 70% 80% 50%/50% 70% 60% 80%;
+    border-radius: 50% 80% 80% 50%/50% 80% 60% 80%;
   }
 
   100% {
-    border-radius: 80% 50% 60% 80%/70% 60% 80% 50%;
+    border-radius: 70% 50% 60% 80%/70% 60% 80% 50%;
   }
 }
-
 /*SOBRE MIM*/
+
+/*HABILIDADES*/
+img{
+  width: 60px;
+  margin: 5px;
+}
+/*HABILIDADES*/
+
 /*SCROLL-SNAP*/
 
 /*CONTATO*/
