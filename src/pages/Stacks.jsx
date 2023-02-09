@@ -15,7 +15,7 @@ import Git from '../assets/img/git.png';
 import Js from '../assets/img/js.png';
 
 
-export default function Skills() {
+export default function Stacks() {
     return (
         <section id="Stacks">
             <div className="container">

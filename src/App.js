@@ -5,7 +5,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Education from './pages/Education';
 import Projects from './pages/Projects';
-import Skills from './pages/Skills';
+import Stacks from './pages/Stacks';
 
 export const ThemeContext = createContext(null);
 
@@ -33,7 +33,7 @@ function App() {
 
         <About />
         <Education />
-        <Skills />
+        <Stacks />
         <Projects />
         <Contact />
       </div>

@@ -21,7 +21,7 @@ const Navbar = (props) => {
                             <a href="#Education">Educação</a>
                         </li>
                         <li className="nav-item">
-                            <a href="#Skills">Habilidades</a>
+                            <a href="#Stacks">Stacks</a>
                         </li>
                         <li className="nav-item">
                             <a href="#Projects">Projetos</a>
