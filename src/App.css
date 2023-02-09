@@ -264,11 +264,30 @@ h1 {
 p {
   font-size: 1.2rem;
 }
-#foto{
+
+#foto {
   border-radius: 50%;
   width: 450px;
   height: 450px;
+
+  animation: animacao 8s ease-in-out infinite 0.75s;
+
 }
+
+@keyframes animacao {
+  0% {
+    border-radius: 70% 50% 60% 80%/70% 60% 80% 50%;
+  }
+
+  50% {
+    border-radius: 60% 70% 80% 50%/50% 70% 60% 80%;
+  }
+
+  100% {
+    border-radius: 80% 50% 60% 80%/70% 60% 80% 50%;
+  }
+}
+
 /*SOBRE MIM*/
 /*SCROLL-SNAP*/
 
@@ -280,6 +299,7 @@ p {
   box-shadow:
     rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 #dark #Contact {
   border-radius: 1rem;
   padding: 2rem;
@@ -306,7 +326,8 @@ p {
   p {
     font-size: 1rem;
   }
-  #foto{
+
+  #foto {
     width: 300px;
     height: 300px;
   }
